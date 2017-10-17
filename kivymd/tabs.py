@@ -101,7 +101,7 @@ Builder.load_string("""
     height: dp(56)  # Spec
     ScreenManager:
         id: tab_manager
-        transition: sm.FadeTransition(duration=.2)
+        transition: sm.NoTransition() #sm.FadeTransition(duration=.2)
         current: root.current
         screens: root.tabs
     MDBottomNavigationBar:
